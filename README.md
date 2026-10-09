@@ -1,45 +1,41 @@
-# Personal website
+# Rong Fan, Ph.D. — Personal website
 
-A responsive, accessible portfolio template hosted on GitHub Pages.
+**Live website:** https://fanrong2049.github.io/
 
-**Website:** https://fanrong2049.github.io/
+A responsive professional website focused on clinical pharmacology, DMPK, and oncology development. The content was adapted from Rong Fan's September 29, 2026 CV.
 
-## Make it yours
+## Content
 
-All website content and styling are in `index.html`. No framework, installation, or build is required.
+- Professional introduction and location
+- Three selected areas of contribution in drug development
+- Karyopharm and Frontage experience
+- Education, certifications, selected training, and awards
+- Publications, presentations, and a patent application
+- Email, LinkedIn, and GitHub contact links
+- Downloadable three-page CV
 
-1. Open `index.html` in GitHub and click the pencil button to edit.
-2. Replace `Your Name`, `YN`, the page title and description, and all text in square brackets with your real details.
-3. Replace the example project titles, descriptions, and expandable case studies with two or three actual work samples. The decorative illustrations are placeholders, not evidence or real data.
-4. Update experience, education, location, skills, and the opportunities you want.
-5. Replace the email placeholder with `<a href="mailto:you@example.com">Email me</a>` using your real professional email, and replace the LinkedIn placeholder with a link to your public profile.
-6. Upload your résumé as `resume.pdf` to the repository root. Replace the résumé note with `<a href="resume.pdf" target="_blank" rel="noopener">Download résumé (PDF)</a>`.
-7. Commit your changes. GitHub Pages automatically publishes updates from the `main` branch.
+The public CV retains the original professional content and removes the phone number from the contact line. Email and LinkedIn remain available. The monogram and project panels are decorative graphics, not a photograph or study data.
 
-Only publish information and work samples you are allowed to share. The template contains no invented credentials, achievements, or testimonials.
+## Edit the website
 
-## GitHub Pages settings
-
-Under **Settings → Pages**, choose **Deploy from a branch**, then **main** and **/ (root)**. Save. The site address is https://fanrong2049.github.io/.
-
-The `.nojekyll` file ensures the files are served directly. HTTPS is provided by GitHub Pages.
-
-## Customize the design
+Open `index.html` in GitHub, click the pencil button, make your edits, and commit to `main`. GitHub Pages automatically publishes the changes. All page content and styles are in that file; there is no framework, installation, or build step.
 
 - Colors: edit the variables at the beginning of the `<style>` block.
-- Typography: the design uses system fonts and Georgia, with no external font services.
-- Portrait: replace the initials panel with an image, and give it descriptive alt text.
-- Projects: duplicate or remove an entire `<article class="project">` block.
-- Project images: replace the decorative `project-visual` contents with a screenshot and appropriate alt text.
+- Portrait: replace the initials panel with your photograph and descriptive alt text.
+- CV: replace `resume.pdf` with an updated public copy using the same filename.
+- Contributions: edit the `<article class="project">` blocks.
+- Research: edit the `<article class="publication">` blocks.
 
-## Preview locally
+## Hosting
 
-Open `index.html` in any web browser. Check mobile layout, project expanders, navigation, and your actual contact/résumé links before sharing the site.
+GitHub Pages uses **Deploy from a branch → main → / (root)**. `.nojekyll` ensures the static files are served directly. HTTPS is enforced on the default domain.
 
 ## Files
 
-- `index.html`: the entire public website
-- `.nojekyll`: serves the static website without Jekyll processing
-- `README.md`: editing instructions
+- `index.html`: public website
+- `resume.pdf`: downloadable public CV
+- `favicon.svg`: initials icon
+- `.nojekyll`: static hosting configuration
+- `README.md`: maintenance instructions
 
-There are no tracking scripts, external dependencies, or paid hosting requirements.
+The site uses system fonts, with no tracking scripts or external dependencies. Check mobile layout and contact, CV, and publication links after updates.
