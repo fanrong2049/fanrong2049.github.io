@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A personal portfolio template. Explore selected work, experience, and ways to connect.">
+  <meta name="theme-color" content="#f4f2eb">
+  <title>Your Name — Personal Portfolio</title>
+  <style>
+    :root{--paper:#f4f2eb;--ink:#24392f;--muted:#5c6c62;--line:#ccd3c7;--green:#275d45;--lime:#d7e9ad;--white:#fffef9;--serif:Georgia,'Times New Roman',serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:30px}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:1.65}a{color:inherit}button,input{font:inherit}a:focus-visible,summary:focus-visible{outline:3px solid var(--green);outline-offset:6px}.wrap{max-width:1180px;margin:auto;padding:0 40px}.skip{position:absolute;left:16px;top:-100px;background:var(--ink);color:white;padding:10px;z-index:10}.skip:focus{top:12px}.header{display:flex;align-items:center;justify-content:space-between;padding:28px 0;border-bottom:1px solid var(--line);gap:24px}.brand{text-decoration:none;font-weight:700;letter-spacing:-.5px;font-size:22px}.brand span{color:var(--green)}nav{display:flex;gap:30px;font-size:14px}nav a{text-decoration:none}nav a:hover{text-decoration:underline;text-underline-offset:6px}.eyebrow{font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase}.label{display:inline-flex;align-items:center;gap:9px;padding:6px 12px;border:1px solid var(--line);border-radius:30px;font-size:12px}.dot{width:7px;height:7px;border-radius:50%;background:var(--green)}.hero{padding:78px 0 72px;display:grid;grid-template-columns:1.5fr 1fr;gap:64px;align-items:center}.hero h1{font-family:var(--serif);font-size:clamp(64px,8vw,108px);font-weight:400;letter-spacing:-5px;line-height:1.03;margin:24px 0}.hero .role{font-size:24px;line-height:1.35;margin:0 0 20px}.intro{max-width:570px;color:var(--muted);font-size:18px}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.button{display:inline-flex;gap:24px;align-items:center;text-decoration:none;padding:12px 22px;border-radius:4px;border:1px solid var(--ink);font-size:14px;font-weight:700}.button.primary{background:var(--ink);color:var(--white)}.button:hover{background:var(--lime);color:var(--ink)}.portrait{position:relative;aspect-ratio:1/1.12;background:#dce4d6;border-radius:160px 160px 10px 10px;display:flex;align-items:center;justify-content:center;overflow:hidden}.portrait:before{content:'';position:absolute;width:220px;height:220px;border:1px solid #abbba4;border-radius:50%;top:38px;left:calc(50% - 110px)}.portrait:after{content:'';position:absolute;width:340px;height:340px;border:1px solid #abbba4;border-radius:50%;bottom:-165px;left:calc(50% - 170px)}.monogram{font-family:var(--serif);font-size:110px;color:#6c8369;z-index:1;letter-spacing:-8px}.portrait-note{position:absolute;bottom:25px;left:0;right:0;text-align:center;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;z-index:1}.hero-aside{padding-left:12px}.caption{font-size:12px;color:var(--muted);margin:15px 0 0}.strip{display:flex;justify-content:space-between;align-items:center;padding:18px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:13px;gap:20px}.strip span:first-child{font-weight:700}.section{padding:72px 0}.section-head{display:flex;justify-content:space-between;gap:24px;align-items:flex-end;margin-bottom:34px}h2{font-family:var(--serif);font-size:48px;line-height:1.1;font-weight:400;letter-spacing:-1.5px;margin:12px 0 0}.section-head p{font-size:14px;color:var(--muted);max-width:315px;margin:0}.project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.project{border-top:1px solid var(--line);padding-top:16px;min-width:0}.project-visual{height:205px;border-radius:5px;background:#e2e6db;padding:30px;display:flex;align-items:center;justify-content:center;margin-bottom:21px;overflow:hidden}.visual-report{background:#e1e7d8}.sheet{background:var(--white);box-shadow:0 12px 28px #24392f12;width:190px;padding:20px 18px;transform:rotate(-6deg)}.sheet b{display:block;font-size:10px;letter-spacing:1px;border-bottom:1px solid var(--line);padding-bottom:8px}.bars{height:76px;display:flex;gap:10px;align-items:flex-end;margin-top:12px}.bars i{background:#709267;flex:1;height:34%}.bars i:nth-child(2){height:58%}.bars i:nth-child(3){height:48%}.bars i:nth-child(4){height:86%;background:var(--green)}.visual-writing{background:#e8decf}.note{width:180px;background:#fffaf1;padding:24px;transform:rotate(5deg);box-shadow:0 12px 28px #24392f12}.note span{font-family:var(--serif);font-size:30px;line-height:1.2;display:block;margin-bottom:18px}.note i{display:block;height:3px;background:#cfbaa0;margin:9px 0}.note i:last-child{width:60%}.visual-process{background:#dbe5e5}.flow{display:flex;align-items:center;gap:8px}.flow span{display:grid;place-items:center;width:52px;height:52px;background:#fffef9;border:1px solid #95b2ac;border-radius:50%;font-family:var(--serif);font-size:23px}.flow i{width:17px;height:1px;background:#6c8a82}.project-meta{font-size:10px;letter-spacing:1.3px;text-transform:uppercase;color:var(--muted)}h3{font-size:21px;line-height:1.3;font-weight:500;margin:9px 0 12px}.project p{font-size:14px;color:var(--muted);margin:0 0 18px}.project details{font-size:14px}.project summary{list-style:none;font-weight:700;cursor:pointer;display:flex;justify-content:space-between;padding:12px 0;border-top:1px solid var(--line)}summary::-webkit-details-marker{display:none}.project summary:after{content:'+'}.project details[open] summary:after{content:'−'}.case{padding:15px;background:#e9ece2;border-radius:4px}.case p{margin:0 0 12px}.case p:last-child{margin:0}.case strong{display:block;color:var(--ink)}.about-section{border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1.2fr;gap:70px}.about-copy{max-width:450px;color:var(--muted)}.skills{display:flex;gap:8px;flex-wrap:wrap;margin-top:24px}.skills span{border:1px solid var(--line);padding:5px 11px;border-radius:20px;font-size:12px;color:var(--ink)}.timeline-item{padding:21px 0;border-bottom:1px solid var(--line)}.timeline-item:first-child{padding-top:0}.timeline-top{display:flex;justify-content:space-between;gap:16px;align-items:baseline}.timeline-top h3{margin:0}.timeline-top span{font-size:11px;color:var(--muted);white-space:nowrap}.timeline-item p{font-size:14px;color:var(--muted);margin:9px 0 0}.resume{display:flex;align-items:center;justify-content:space-between;border:1px solid var(--line);padding:22px;margin-top:25px;gap:25px;background:#e9ece2}.resume p{font-size:13px;margin:4px 0 0;color:var(--muted)}.resume strong{font-size:16px}.resume-icon{font-family:var(--serif);font-size:36px;color:var(--green)}.contact{background:var(--ink);color:var(--white);border-radius:8px;padding:52px;display:grid;grid-template-columns:1.2fr 1fr;gap:60px;align-items:center;margin-bottom:64px}.contact h2{font-size:52px;margin:15px 0 20px}.contact p{color:#c1cfc3;font-size:15px;max-width:420px}.contact-links{border-left:1px solid #617269;padding-left:35px;overflow-wrap:anywhere}.contact-links a,.contact-links .placeholder-link{display:block;text-decoration:none;padding:12px 0;border-bottom:1px solid #617269;font-size:15px}.contact-links a:hover{color:var(--lime)}.contact-links small{display:block;color:#c1cfc3;font-size:11px;margin-top:7px}.footer{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);padding:22px 0 30px;font-size:11px;color:var(--muted)}.footer a{text-underline-offset:4px}
+    @media(max-width:850px){.wrap{padding:0 26px}.hero{gap:30px}.hero h1{font-size:76px}.project-grid{gap:16px}.project-visual{padding:15px;height:170px}.about-section{gap:35px}.contact{padding:34px;gap:30px}.contact h2{font-size:43px}.flow span{width:40px;height:40px}.flow{gap:4px}.flow i{width:10px}}
+    @media(max-width:640px){.wrap{padding:0 22px}.header{padding:20px 0;align-items:flex-start}.brand{font-size:20px}nav{gap:14px;font-size:12px;flex-wrap:wrap;justify-content:flex-end;max-width:180px}.hero{padding:48px 0;grid-template-columns:1fr;gap:35px}.hero h1{font-size:72px;letter-spacing:-3px}.hero .role{font-size:22px}.hero-aside{padding:0;max-width:270px}.portrait{aspect-ratio:1/1}.monogram{font-size:90px}.strip{align-items:flex-start;flex-direction:column;gap:5px}.section{padding:48px 0}.section-head{display:block}.section-head p{margin-top:20px;max-width:100%}h2{font-size:40px}.project-grid{grid-template-columns:1fr;gap:32px}.project-visual{height:220px}.about-section{grid-template-columns:1fr;gap:35px}.contact{grid-template-columns:1fr;padding:28px;gap:22px;margin-bottom:40px}.contact h2{font-size:42px}.contact-links{padding:0;border:0}.footer{flex-direction:column;gap:8px}.timeline-top{flex-wrap:wrap;gap:4px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="wrap">
+    <header class="header">
+      <!-- PERSONALIZE: replace the name here, in the hero, page title, and footer. -->
+      <a class="brand" href="#main">Your Name<span>.</span></a>
+      <nav aria-label="Main navigation"><a href="#work">Work</a><a href="#about">About</a><a href="#resume">Résumé</a><a href="#contact">Contact</a></nav>
+    </header>
+    <main id="main">
+      <section class="hero" aria-labelledby="intro-heading">
+        <div>
+          <span class="label"><span class="dot" aria-hidden="true"></span>Personal portfolio template</span>
+          <h1 id="intro-heading">Your Name<span style="color:var(--green)">.</span></h1>
+          <p class="role">[Your target role or specialty]</p>
+          <p class="intro">[Introduce yourself in two sentences. Explain what you do, who you help, and the kind of opportunity you’re looking for.]</p>
+          <div class="buttons"><a class="button primary" href="#work">Explore my work <span aria-hidden="true">↗</span></a><a class="button" href="#contact">Get in touch <span aria-hidden="true">→</span></a></div>
+        </div>
+        <div class="hero-aside">
+          <!-- PERSONALIZE: replace this monogram with your initials or a portrait. -->
+          <div class="portrait" role="img" aria-label="Decorative placeholder for your initials or portrait"><span class="monogram" aria-hidden="true">YN</span><span class="portrait-note" aria-hidden="true">Make this space yours</span></div>
+          <p class="caption">[Your city / remote preference] · [Your specialty]</p>
+        </div>
+      </section>
+      <div class="strip"><span>Good work starts with a clear story.</span><span>Selected work · Experience · A little about me</span></div>
+      <section id="work" class="section" aria-labelledby="work-heading">
+        <div class="section-head"><div><div class="eyebrow">01 / Selected work</div><h2 id="work-heading">Ideas into impact.</h2></div><p>These are example project layouts. Replace each with your own work and real results.</p></div>
+        <div class="project-grid">
+          <article class="project">
+            <div class="project-visual visual-report" aria-hidden="true"><div class="sheet"><b>PROJECT / 01</b><div class="bars"><i></i><i></i><i></i><i></i></div></div></div>
+            <div class="project-meta">Example layout · Analysis</div><h3>[Project one title]</h3><p>[Describe a problem you investigated and the insight or decision your work supported.]</p>
+            <details><summary>Explore project</summary><div class="case"><p><strong>The challenge</strong>[What needed to change, and why?]</p><p><strong>My contribution</strong>[Describe your own research, analysis, or implementation.]</p><p><strong>The result</strong>[Add a verified result or what you learned. Replace the illustration with an actual work sample.]</p></div></details>
+          </article>
+          <article class="project">
+            <div class="project-visual visual-writing" aria-hidden="true"><div class="note"><span>A clearer<br>story.</span><i></i><i></i><i></i></div></div>
+            <div class="project-meta">Example layout · Communication</div><h3>[Project two title]</h3><p>[Introduce a writing, presentation, design, or communication sample and its audience.]</p>
+            <details><summary>Explore project</summary><div class="case"><p><strong>The challenge</strong>[What did the audience need to understand?]</p><p><strong>My contribution</strong>[Explain how you shaped the message or design.]</p><p><strong>The result</strong>[Explain the outcome and add a public link to your sample.]</p></div></details>
+          </article>
+          <article class="project">
+            <div class="project-visual visual-process" aria-hidden="true"><div class="flow"><span>1</span><i></i><span>2</span><i></i><span>3</span></div></div>
+            <div class="project-meta">Example layout · Problem solving</div><h3>[Project three title]</h3><p>[Describe a tool, process improvement, volunteer initiative, or independently built project.]</p>
+            <details><summary>Explore project</summary><div class="case"><p><strong>The challenge</strong>[What was difficult, slow, or missing?]</p><p><strong>My contribution</strong>[Outline the approach and what you built or changed.]</p><p><strong>The result</strong>[Add a verified outcome, demo, or lesson learned.]</p></div></details>
+          </article>
+        </div>
+      </section>
+      <section id="about" class="section about-section" aria-labelledby="about-heading">
+        <div><div class="eyebrow">02 / About & experience</div><h2 id="about-heading">The person<br>behind the work.</h2><p class="about-copy">[Share a brief professional introduction: your background, the work you enjoy, and the strengths you bring to a team.]</p><p class="about-copy">[Add one personal detail or interest that you’re comfortable making public.]</p><div class="skills" aria-label="Skills to personalize"><span>[Skill one]</span><span>[Skill two]</span><span>[Skill three]</span><span>[Skill four]</span></div></div>
+        <div>
+          <div class="timeline-item"><div class="timeline-top"><h3>[Most recent role]</h3><span>[Dates]</span></div><p>[Organization] · [A specific contribution or accomplishment.]</p></div>
+          <div class="timeline-item"><div class="timeline-top"><h3>[Previous role or project]</h3><span>[Dates]</span></div><p>[Organization] · [A specific contribution or accomplishment.]</p></div>
+          <div class="timeline-item"><div class="timeline-top"><h3>[Education or training]</h3><span>[Dates]</span></div><p>[Institution] · [Relevant qualification or area of study.]</p></div>
+          <div id="resume" class="resume"><div><strong>Your résumé, at a glance.</strong><p>Résumé coming soon. Add your PDF and replace this note with a download link.</p></div><span class="resume-icon" aria-hidden="true">↗</span></div>
+        </div>
+      </section>
+      <section id="contact" class="contact" aria-labelledby="contact-heading">
+        <div><div class="eyebrow">03 / Let’s connect</div><h2 id="contact-heading">Let’s talk about<br>what’s next.</h2><p>[Describe the roles or collaborations you’re interested in. Add your email and LinkedIn link alongside this note.]</p></div>
+        <div class="contact-links">
+          <!-- PERSONALIZE: change the spans below to links once you add your details. -->
+          <span class="placeholder-link">[Your professional email]<small>Add your email to enable direct contact.</small></span>
+          <span class="placeholder-link">[Your LinkedIn profile]<small>Add your public LinkedIn URL.</small></span>
+          <a href="https://github.com/fanrong2049" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span><small>github.com/fanrong2049</small></a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"><span>© <span id="year">2026</span> Your Name. Personal portfolio.</span><a href="#main">Back to top ↑</a></footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
